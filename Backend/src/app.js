@@ -7,6 +7,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "https://prep-ai-inky.vercel.app",
+  "https://prepai.vasusinghal.com",
 ];
 
 app.use(cookieParser());
