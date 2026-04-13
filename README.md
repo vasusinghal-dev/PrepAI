@@ -2,6 +2,20 @@
 
 An AI-powered web application that generates personalized interview preparation reports based on job descriptions, resumes, and self-descriptions. The app analyzes candidate profiles and job requirements to create tailored technical and behavioral questions, skill gap analysis, and a structured learning roadmap.
 
+## 🖼️ Screenshots
+
+| Home                        | Reports                        |
+| --------------------------- | ------------------------------ |
+| ![](./screenshots/home.png) | ![](./screenshots/reports.png) |
+
+| Report Summary                        | Roadmap                        |
+| ------------------------------------- | ------------------------------ |
+| ![](./screenshots/report_summary.png) | ![](./screenshots/roadmap.png) |
+
+| Q&A                        |
+| -------------------------- |
+| ![](./screenshots/q&a.png) |
+
 ## ✨ Features
 
 ### Core Features
