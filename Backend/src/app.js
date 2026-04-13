@@ -9,8 +9,9 @@ const allowedOrigins = [
   "https://prep-ai-inky.vercel.app",
 ];
 
-app.use(express.json());
 app.use(cookieParser());
+app.set("trust proxy", 1);
+
 app.use(
   cors({
     origin: function (origin, callback) {
@@ -23,6 +24,8 @@ app.use(
     credentials: true,
   }),
 );
+
+app.use(express.json());
 
 const authRouter = require("./routes/auth.routes.js");
 const interviewRouter = require("./routes/interview.routes.js");
