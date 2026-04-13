@@ -1,16 +1,13 @@
 require("dotenv").config();
 const app = require("./src/app.js");
 const connectToDB = require("./src/config/database.js");
-const generateInterviewReport = require("./src/services/ai.service.js");
 
-// generateInterviewReport({ resume, jobDescription, selfDescription });
+const PORT = process.env.PORT || 3000;
 
 connectToDB()
   .then(() => {
     console.log("Database connection established...");
-    app.listen(3000, () =>
-      console.log("Server running on http://localhost:3000"),
-    );
+    app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
   })
   .catch((err) => {
     console.log("Database cannot be connected", err);
